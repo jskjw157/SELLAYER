@@ -99,11 +99,22 @@
 6. AI 제공사/모델 선정 및 고품질 컷당 목표 원가.
 7. 최초 템플릿(주얼리만 먼저 vs 범용 상품 바로 지원).
 
-## 8. 다음 문서화 작업
+## 8. 문서 산출물 및 다음 작업
 
-- `docs/TECHNICAL_DESIGN.md`: Architecture, Service boundaries, ERD, REST contracts, idempotency/ledger, auth architecture.
-- `docs/UX_SPEC.md`: 화면별 wireframe, 편집기 행동, 접근성, 오류/취소 흐름.
-- `docs/DEPLOYMENT.md`: Hostinger VPS 사전 준비, GitHub Actions 배포 workflow, Blue/Green 또는 단일 노드 롤백 계획.
-- `docs/QUALITY_PLAN.md`: 제품 특징 평가 데이터셋, 수동 검수표, 프롬프트 회귀 테스트.
+**이번 문서 PR에서 생성된 설계 문서**
 
-> 위 파일은 **추후 작성 예정**이며 이번 PR에서 존재한다고 간주하지 않는다.
+- [기술 설계서](./TECHNICAL_DESIGN.md): 서비스 경계, 도메인·ERD, v1 API, 큐/크레딧/QA, 편집 JSON, 게시 거래.
+- [UX 명세](./UX_SPEC.md): 화면 IA, 제품 특징 Lock, 생성·검수·3패널 편집, 반응형/오류/접근성, UX-AC.
+- [배포 설계](./DEPLOYMENT.md): Hostinger VPS Ubuntu 24.04, GitHub Actions 배포 통제/rollback/비밀정보/백업.
+- [품질 계획](./QUALITY_PLAN.md): 골든셋, 상품 Fidelity, 편집/Export 회귀, 보안·출시 게이트.
+- [구현 백로그](./IMPLEMENTATION_BACKLOG.md): Epic별 이슈 후보와 의존성, 테스트·Definition of Done.
+
+**다음 실행 과제 (아직 구현되지 않음)**
+
+1. 실제 상품 골든셋/권리 확인 → AI 품질·원가 PoC.
+2. PDP JSON 편집기 + Chromium Export 렌더 일치 PoC.
+3. Hostinger 실제 사양/도메인/접속 경로 확인 후 기술 결정 ADR 확정.
+4. GitHub Issues 생성/우선순위 확정 및 code scaffold/CI 개발.
+5. 공식 Cafe24·Naver 입점 요건 확인 및 테스트몰 준비.
+
+> 설계서 작성은 제품/배포 구현 완료를 의미하지 않습니다.
