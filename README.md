@@ -2,7 +2,7 @@
 
 > **AI Commerce Creative Studio** — 상품 원본 이미지 한 장에서 모델 착용샷·상품 단독컷·편집 가능한 상세페이지까지. 카페24와 스마트스토어로 확장하는 독립 SaaS.
 
-**Status:** PRD / 제품 요구사항 리뷰 단계 (코드 구현 및 배포 전)
+**Status:** 제품/기술/UX 설계 문서 v0.1 검토 단계 (코드 구현 및 배포 전)
 
 ## 제품 개요
 
@@ -21,6 +21,11 @@ SELLAYER는 한국 커머스 판매자가 상품 원본을 업로드하고 AI �
 | [제품 요구사항 정의서 (PRD v0.1)](docs/PRD.md) | 목표, 페르소나, 사용자 여정, 기능 요구사항, UX, 인수 기준, 리스크 | 리뷰 |
 | [출시 로드맵](docs/ROADMAP.md) | PoC → M0 독립 SaaS → M1 Cafe24 → M2 Naver → M3 Scale | 리뷰 |
 | [커머스 채널 연동 요구사항](docs/CHANNEL_INTEGRATIONS.md) | Cafe24 OAuth, Naver 솔루션 인증, 게시 안전장치와 검증 | 리뷰 |
+| [기술설계서 (TDD)](docs/TECHNICAL_DESIGN.md) | 아키텍처·ERD·API·이미지 생성 큐·결제원장·편집 데이터·게시 거래 | 검토 |
+| [Figma-like 편집기/UX 명세](docs/UX_SPEC.md) | 정보구조·화면 명세·3패널 편집기·상태/에러·동작 수용 테스트 | 검토 |
+| [품질/출시 게이트](docs/QUALITY_PLAN.md) | 실상품 Fidelity 테스트·Golden Set·자동 QA·보안·export 회귀 | 검토 |
+| [Hostinger VPS 배포 설계](docs/DEPLOYMENT.md) | Ubuntu 24.04·GitHub Actions·GHCR·보안/백업/롤백 | 검토 |
+| [구현 백로그](docs/IMPLEMENTATION_BACKLOG.md) | PoC·11개 Epic 별 구현/테스트 이슈 분할 및 순서 | 검토 |
 
 ## 출시 방향
 
